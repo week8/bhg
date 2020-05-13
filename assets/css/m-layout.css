@@ -134,7 +134,13 @@ body.about .header .cont .nav li.about a {
 }
 .index-banner {
   background: #007aff;
+  padding-top: 1.55rem;
   padding-bottom: 2.2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 .index-banner .cont .txt-box {
   float: left;
