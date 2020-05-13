@@ -86,12 +86,11 @@ body.about .header .cont .nav li.about a {
   margin-top: 50px;
 }
 .banner {
-  margin-top: 60px;
-  text-align: center;
-  /* display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; */
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 .index-banner {
   background: #007aff;
