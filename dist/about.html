@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,18 +7,29 @@
     <meta name="description" content="百花谷平台是诚信电商销量提升服务的平台,团队有多年专业电商运营经验，单年操盘千万销售额，带领团队成功操作线上40家过百万店铺，深谙电商痛点，教你提升交易量。" />
 	<meta name="keywords" content="百花谷,补单运营工具,店铺运营工具" />
 	<meta name="author" content="order by baidu.com" />
-    <link href="../assets/swiper/swiper.css" rel="stylesheet">
-    <link href="../assets/fonts/font-awesome.css" rel="stylesheet">
-    <link href="../assets/css/reset.css" rel="stylesheet">
-    <link rel='stylesheet' href='../assets/css/pc-layout.css'>
-    
+    <link href="./assets/swiper/swiper.css" rel="stylesheet">
+    <link href="./assets/fonts/font-awesome.css" rel="stylesheet">
+    <link href="./assets/css/reset.css" rel="stylesheet">
+    <script src="./assets/js/jquery.js"></script>
+    <!-- 判断移动端或者pc端导入相应的样式表 -->
+    <script>
+        (function() {
+            if (navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)) {
+                $('head').append("<link rel='stylesheet' href='./assets/css/m-layout.css'>");
+                return true;
+            }else {
+                $('head').append("<link rel='stylesheet' href='./assets/css/pc-layout.css'>");
+                return false;
+            }
+        })();
+    </script>
     <title>专业店铺补单工具_百花谷平台联系方式-百花谷平台</title>
 </head>
 <body class="about">
     <!-- 头部logo，导航内容 -->
 <div class="act J-header header">
     <div class="cont clearfix">
-        <a class="logo left" href="/"><img src="../assets/images/bhg-logo.png" alt="百花谷平台"></a>
+        <a class="logo left" href="/"><img src="./assets/images/bhg-logo.png" alt="百花谷平台"></a>
         <ul class="nav mobile-nav left J-nav">
             <li class="home"><a href="index.html">首页</a></li>
             <li class="price"><a href="price.html">平台价格</a></li>
@@ -35,11 +45,12 @@
     </div>
 </div>
 <div class="layer-mark-box J-layer-mark J-close"></div>
-
+    
     <!-- banner图片 -->
     <div class="banner">
-            <img class="banner-img" src="../assets/images/bhg-banner5.jpg" alt="">
+        <img src="./assets/images/bhg-banner5.jpg" alt="">
     </div>
+
     <!-- 平台简介 -->
     <div class="introdution public-part">
         <div class="slogan tc">
@@ -56,6 +67,7 @@
             <p>6.商家注册链接：http://www.icjcf.cn/user/register/index/tUid/52784.html</p>
         </div>
     </div>
+
     <!-- 发展历程 -->
     <div class="course public-part">
         <div class="slogan tc">
@@ -71,6 +83,7 @@
             <li><span>2019.8-2019.12 </span><span>新增渠道流量入口，超级标签、一拖多链接、抖音补单、直播补单等</span></li>
         </ul>
     </div>
+
     <!-- 系统模式  -->
     <div class="pattern public-part">
         <div class="slogan tc">
@@ -104,44 +117,22 @@
     </div>
     <ul class="cont">
         <li>
-            <img src="../assets/images/bhg-icon1.png" alt="">
+            <img src="./assets/images/bhg-icon1.png" alt="">
             <h2>入驻流程</h2>
             <p>点击网站右上方注册，绑定店铺信息，等待审核通过</p>
         </li>
         <li>
-            <img src="../assets/images/bhg-icon2.png" alt="">
+            <img src="./assets/images/bhg-icon2.png" alt="">
             <h2>疑问咨询</h2>
             <p>绑定店铺后，可查看任务流程，无需任何费用，如有疑问可在线咨询</p>
         </li>
         <li>
-            <img src="../assets/images/bhg-icon3.png" alt="">
+            <img src="./assets/images/bhg-icon3.png" alt="">
             <h2>售后保障</h2>
             <p>平台对于订单售后有专业团队，全程保障，资金方面跑单包赔，极速处理</p>
         </li>
     </ul>
 </div>
-    <!-- 右侧悬浮框 -->
-<ul class="right-fixed J-right-fixed tc">
-    <li>
-        <a href="http://www.icjcf.cn/user/register/index/tUid/52784.html">
-            <i class="fa fa-user-plus"></i>
-            <p>快速注册</p>
-        </a>
-    </li>
-    <li class="J-mobile">
-        <i class="fa fa-wechat"></i>
-        <p>微信咨询</p>
-        <div class="wechat-box J-code">
-            <img src="../assets/images/bhg-weChat-code.jpg" alt="">
-            <p>微信号：</p>
-        </div>
-    </li>
-    <li>
-        <a href="javascript:;" onclick="topFun()">
-            <i class="fa fa-angle-double-up"></i>
-        </a>
-    </li>
-</ul>
         <!-- 底部信息 -->
     <div class="footer">
         <div class="cont clearfix">
@@ -154,19 +145,41 @@
                 <li><a href="news.html">平台公告</a></li>
             </ul>
             <ul class="right tc">
-                <img src="../assets/images/bhg-weChat-code.jpg" alt="">
+                <img src="./assets/images/bhg-weChat-code.jpg" alt="">
                 <p>微信二维码</p>
             </ul>
         </div>
     </div>
-
     <div class="copyright tc">
         <p>Copyright 2020.All Rights Reserved.百花谷平台</p>
     </div>
 
-    <script src="../assets/js/jquery.js"></script>
-    <script src="../assets/js/rem.js"></script>
-    <script src="../assets/swiper/swiper.js"></script>
+    <!-- 右侧悬浮框 -->
+    <ul class="right-fixed J-right-fixed tc">
+        <li>
+            <a href="http://www.icjcf.cn/user/register/index/tUid/52784.html">
+                <i class="fa fa-user-plus"></i>
+                <p>快速注册</p>
+            </a>
+        </li>
+        <li class="J-mobile">
+            <i class="fa fa-wechat"></i>
+            <p>微信咨询</p>
+            <div class="wechat-box J-code">
+                <img src="./assets/images/bhg-weChat-code.jpg" alt="">
+                <p>微信号：</p>
+            </div>
+        </li>
+        <li>
+            <a href="javascript:;" onclick="topFun()">
+                <i class="fa fa-angle-double-up"></i>
+            </a>
+        </li>
+    </ul>
+
+
+    <script src="./assets/js/rem.js"></script>
+    <script src="./assets/swiper/swiper.js"></script>
     <script>
         $(function() {
             // 右侧悬浮栏效果
@@ -180,6 +193,7 @@
                 });
             });
         });
+
         // 返回顶部
         function topFun() {
             $('body,html').animate({ scrollTop: 0 }, 500);
@@ -199,5 +213,5 @@
             $('.J-nav').removeClass('act');
         });
     </script>
-</body>
+    </body>
 </html>

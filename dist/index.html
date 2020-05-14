@@ -7,19 +7,29 @@
     <meta name="description" content="百花谷平台是诚信电商销量提升服务的平台,团队有多年专业电商运营经验，单年操盘千万销售额，带领团队成功操作线上40家过百万店铺，深谙电商痛点，教你提升交易量。" />
 	<meta name="keywords" content="百花谷,补单运营工具,店铺运营工具" />
 	<meta name="author" content="order by baidu.com" />
-    <link href="../assets/swiper/swiper.css" rel="stylesheet">
-    <link href="../assets/fonts/font-awesome.css" rel="stylesheet">
-    <link href="../assets/css/reset.css" rel="stylesheet">
-    <link rel='stylesheet' href='../assets/css/pc-layout.css'>
-    
+    <link href="./assets/swiper/swiper.css" rel="stylesheet">
+    <link href="./assets/fonts/font-awesome.css" rel="stylesheet">
+    <link href="./assets/css/reset.css" rel="stylesheet">
+    <script src="./assets/js/jquery.js"></script>
+    <!-- 判断移动端或者pc端导入相应的样式表 -->
+    <script>
+        (function() {
+            if (navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)) {
+                $('head').append("<link rel='stylesheet' href='./assets/css/m-layout.css'>");
+                return true;
+            }else {
+                $('head').append("<link rel='stylesheet' href='./assets/css/pc-layout.css'>");
+                return false;
+            }
+        })();
+    </script>
     <title>百花谷平台-专业精准补单打造爆款</title>
 </head>
-
 <body class="home">
     <!-- 头部logo，导航内容 -->
 <div class="act J-header header">
     <div class="cont clearfix">
-        <a class="logo left" href="/"><img src="../assets/images/bhg-logo.png" alt="百花谷平台"></a>
+        <a class="logo left" href="/"><img src="./assets/images/bhg-logo.png" alt="百花谷平台"></a>
         <ul class="nav mobile-nav left J-nav">
             <li class="home"><a href="index.html">首页</a></li>
             <li class="price"><a href="price.html">平台价格</a></li>
@@ -45,7 +55,7 @@
                 <p><span>邀请码52784</span></p>
             </div>
             <div class="img-box">
-                <img src="../assets/images/bhg-banner1.png" alt="">
+                <img src="./assets/images/bhg-banner1.png" alt="">
             </div>
         </div>
     </div>
@@ -143,7 +153,7 @@
                                 <p class="first">支持商家自主审号：</p>
                                 <p class="second">根据商家诉求，考虑到商家对于试客不同审核标准，平台支持商家自主审号旺旺，每个账号1小时审核时间；</p>
                             </div>
-                            <img src="../assets/images/bhg-swiper-img1.jpg" alt="">
+                            <img src="./assets/images/bhg-swiper-img1.jpg" alt="">
                         </div>
                     </div>
                     <div class="swiper-slide clearfix">
@@ -155,7 +165,7 @@
                                 <p class="first">支持全程截图，货比三家、收藏加购、宝贝点赞、问大家、假聊等，切实保障流程安全；</p>
                                 <p class="first">商家备注功能，让买手更好按照商家要求做任务，灵活高效；</p>
                             </div>
-                            <img src="../assets/images/bhg-swiper-img1.jpg" alt="">
+                            <img src="./assets/images/bhg-swiper-img1.jpg" alt="">
                         </div>
                     </div>
                     <div class="swiper-slide clearfix">
@@ -166,7 +176,7 @@
                                 <p class="first">超级标签匹配：</p>
                                 <p class="second">让宝贝快速获得精准人群标签！极速提升关键词搜索权重 1分钟实现宝贝首页展现！能够精准定位宝贝所在，利用标题任意关键词组合，让打标旺旺号通过关键词搜索能够实现宝贝首页排名。  </p>
                             </div>
-                            <img src="../assets/images/bhg-swiper-img1.jpg" alt="">
+                            <img src="./assets/images/bhg-swiper-img1.jpg" alt="">
                         </div>
                     </div>
                     <div class="swiper-slide clearfix">
@@ -174,7 +184,7 @@
                             <div class="txt">
                                 <p class="first">基于有商家在其他渠道来源刷过订单，导致可能的复购和IP措施失效问题，特增加黑名单管理系统，可一键导入最近做过任务买手的旺旺号，有效降低风险问题！</p>
                             </div>
-                            <img src="../assets/images/bhg-swiper-img1.jpg" alt="">
+                            <img src="./assets/images/bhg-swiper-img1.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -215,7 +225,7 @@
             <div class="swiper-container J-black-tech">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide clearfix">
-                        <img src="../assets/images/bhg-swiper-img2.jpg" alt="">
+                        <img src="./assets/images/bhg-swiper-img2.jpg" alt="">
                         <div class="s-cont">
                             <h2>补单黑科技 No.1 </h2>
                             <h1>Supermatch 反稽查技术</h1>
@@ -224,7 +234,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide clearfix">
-                        <img src="../assets/images/bhg-swiper-img2.jpg" alt="">
+                        <img src="./assets/images/bhg-swiper-img2.jpg" alt="">
                         <div class="s-cont">
                             <h2>补单黑科技 No.2</h2>
                             <h1>精准标签系统：</h1>
@@ -234,7 +244,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide clearfix">
-                        <img src="../assets/images/bhg-swiper-img2.jpg" alt="">
+                        <img src="./assets/images/bhg-swiper-img2.jpg" alt="">
                         <div class="s-cont">
                             <h2>补单黑科技 No.3</h2>
                             <h1>多渠道入口+抖音直播补单</h1>
@@ -341,7 +351,7 @@
                         <dd>20-04</dd>
                     </dl>
                     <dl>
-                        <dt><a href="http://www.bhg2017.com/zixun/24.html">百花谷平台靠谱吗_怎么样</a></dt>
+                        <dt><a href="1.html">百花谷平台靠谱吗_怎么样</a></dt>
                         <dd>百花谷平台怎么样，靠不靠谱，很多朋友有听说这个平台能帮助商家做店铺运营...</dd>
                     </dl>
                 </li>
@@ -351,7 +361,7 @@
                         <dd>20-04</dd>
                     </dl>
                     <dl>
-                        <dt><a href="http://www.bhg2017.com/zixun/13.html">百花谷平台任务模板_快速发布任务_附教程</a></dt>
+                        <dt><a href="2.html">百花谷平台任务模板_快速发布任务_附教程</a></dt>
                         <dd>百花谷平台任务模板，快速发布任务介绍，为了便于理解与操作，我们特意附教...</dd>
                     </dl>
                 </li>
@@ -361,7 +371,7 @@
                         <dd>20-04</dd>
                     </dl>
                     <dl>
-                        <dt><a href="http://www.bhg2017.com/zixun/21.html">百花谷平台审核标准及优化提升介绍</a></dt>
+                        <dt><a href="3.html">百花谷平台审核标准及优化提升介绍</a></dt>
                         <dd>百花谷平台审核标准及优化提升介绍，为了提升百花谷平台的效果，我们做了很...</dd>
                     </dl>
                 </li>
@@ -371,7 +381,7 @@
                         <dd>20-04</dd>
                     </dl>
                     <dl>
-                        <dt><a href="http://www.bhg2017.com/zixun/22.html">百花谷流量任务_人工干预链接注意事项</a></dt>
+                        <dt><a href="4.html">百花谷流量任务_人工干预链接注意事项</a></dt>
                         <dd>百花谷流量任务_人工干预链接注意事项，浏览单收费价格：0.8元/单,纯...</dd>
                     </dl>
                 </li>
@@ -381,7 +391,7 @@
                         <dd>20-04</dd>
                     </dl>
                     <dl>
-                        <dt><a href="http://www.bhg2017.com/zixun/23.html">百花谷买手任务流程展示_防秒拍_防拍立淘_防搜店铺名</a></dt>
+                        <dt><a href="5.html">百花谷买手任务流程展示_防秒拍_防拍立淘_防搜店铺名</a></dt>
                         <dd>百花谷买手任务流程展示，方便商家轻松地熟悉我们的放单系统，实现自身放单...</dd>
                     </dl>
                 </li>
@@ -391,7 +401,7 @@
                         <dd>20-04</dd>
                     </dl>
                     <dl>
-                        <dt><a href="http://www.bhg2017.com/zixun/20.html">商家注意_补单必看_百花谷商家必看</a></dt>
+                        <dt><a href="6.html">商家注意_补单必看_百花谷商家必看</a></dt>
                         <dd>商家注意补单必看，百花谷商家必看，严查阶段请商家注意，为了更好的避免严...</dd>
                     </dl>
                 </li>
@@ -400,28 +410,6 @@
         </div>
     </div>
 
-    <!-- 右侧悬浮框 -->
-<ul class="right-fixed J-right-fixed tc">
-    <li>
-        <a href="http://www.icjcf.cn/user/register/index/tUid/52784.html">
-            <i class="fa fa-user-plus"></i>
-            <p>快速注册</p>
-        </a>
-    </li>
-    <li class="J-mobile">
-        <i class="fa fa-wechat"></i>
-        <p>微信咨询</p>
-        <div class="wechat-box J-code">
-            <img src="../assets/images/bhg-weChat-code.jpg" alt="">
-            <p>微信号：</p>
-        </div>
-    </li>
-    <li>
-        <a href="javascript:;" onclick="topFun()">
-            <i class="fa fa-angle-double-up"></i>
-        </a>
-    </li>
-</ul>
         <!-- 底部信息 -->
     <div class="footer">
         <div class="cont clearfix">
@@ -434,19 +422,41 @@
                 <li><a href="news.html">平台公告</a></li>
             </ul>
             <ul class="right tc">
-                <img src="../assets/images/bhg-weChat-code.jpg" alt="">
+                <img src="./assets/images/bhg-weChat-code.jpg" alt="">
                 <p>微信二维码</p>
             </ul>
         </div>
     </div>
-
     <div class="copyright tc">
         <p>Copyright 2020.All Rights Reserved.百花谷平台</p>
     </div>
 
-    <script src="../assets/js/jquery.js"></script>
-    <script src="../assets/js/rem.js"></script>
-    <script src="../assets/swiper/swiper.js"></script>
+    <!-- 右侧悬浮框 -->
+    <ul class="right-fixed J-right-fixed tc">
+        <li>
+            <a href="http://www.icjcf.cn/user/register/index/tUid/52784.html">
+                <i class="fa fa-user-plus"></i>
+                <p>快速注册</p>
+            </a>
+        </li>
+        <li class="J-mobile">
+            <i class="fa fa-wechat"></i>
+            <p>微信咨询</p>
+            <div class="wechat-box J-code">
+                <img src="./assets/images/bhg-weChat-code.jpg" alt="">
+                <p>微信号：</p>
+            </div>
+        </li>
+        <li>
+            <a href="javascript:;" onclick="topFun()">
+                <i class="fa fa-angle-double-up"></i>
+            </a>
+        </li>
+    </ul>
+
+
+    <script src="./assets/js/rem.js"></script>
+    <script src="./assets/swiper/swiper.js"></script>
     <script>
         $(function() {
             // 右侧悬浮栏效果
@@ -460,6 +470,7 @@
                 });
             });
         });
+
         // 返回顶部
         function topFun() {
             $('body,html').animate({ scrollTop: 0 }, 500);
@@ -479,7 +490,7 @@
             $('.J-nav').removeClass('act');
         });
     </script>
-</body>
+    </body>
 </html>
     <script>
         // 选项卡切换
@@ -487,12 +498,14 @@
             $(this).addClass('act').siblings().removeClass('act');
             $('.J-tab-cont ul').eq($(this).index()).show().siblings().hide();
         }); 
+
         /* 轮播 */
         var mySwiper = new Swiper('.J-black-tech', {
             autoplay: 5000,//可选选项，自动滑动
             loop: true,
             pagination : '.pagination'
         });
+
         var tabsSwiper = new Swiper('.J-bf-cont',{
             speed: 1000,
             onSlideChangeStart: function(){
@@ -515,6 +528,7 @@
         $(".J-tabs a").click(function(e){
             e.preventDefault()
         });
+
         /* var isChrome = navigator.userAgent.toLowerCase().match(/chrome/);
         if(!isChrome){
             layer.open({
@@ -523,4 +537,3 @@
             });  
         } */
     </script>
-    
