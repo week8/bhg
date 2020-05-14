@@ -10,7 +10,7 @@
                 <li><a href="news.html">平台公告</a></li>
             </ul>
             <ul class="right tc">
-                <img src="./assets/images/bhg-weChat-code.jpg" alt="">
+                <img class="lazy" data-original="./assets/images/bhg-weChat-code.jpg" alt="">
                 <p>微信二维码</p>
             </ul>
         </div>
@@ -44,9 +44,13 @@
 
 
     <script src="./assets/js/rem.js"></script>
+    <script src="./assets/js/jquery.lazyload.min.js"></script>
     <script src="./assets/swiper/swiper.js"></script>
     <script>
         $(function() {
+            /* 图片懒加载 */
+            $("img.lazy, .bg-lazy").lazyload({ effect: "fadeIn" });
+            
             // 右侧悬浮栏效果
             $('.J-right-fixed li').each(function(){
                 $(this).hover(function() {

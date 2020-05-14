@@ -10,16 +10,15 @@
     <link href="./assets/swiper/swiper.css" rel="stylesheet">
     <link href="./assets/fonts/font-awesome.css" rel="stylesheet">
     <link href="./assets/css/reset.css" rel="stylesheet">
+    <link rel='stylesheet' href='./assets/css/pc-layout.css' id="theLayout">
     <script src="./assets/js/jquery.js"></script>
     <!-- 判断移动端或者pc端导入相应的样式表 -->
     <script>
         (function() {
             if (navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)) {
-                $('head').append("<link rel='stylesheet' href='./assets/css/m-layout.css'>");
+                var _layout = document.getElementById('theLayout');
+                _layout.setAttribute('href','./assets/css/m-layout.css');
                 return true;
-            }else {
-                $('head').append("<link rel='stylesheet' href='./assets/css/pc-layout.css'>");
-                return false;
             }
         })();
     </script>
@@ -48,7 +47,7 @@
     
     <!-- banner图片 -->
     <div class="banner">
-        <img src="./assets/images/bhg-banner4.jpg" alt="">
+        <img class="lazy" data-original="./assets/images/bhg-banner4.jpg" alt="">
     </div>
 
     <div class="container public-part">
@@ -56,7 +55,7 @@
             <p class="nav">
                 <a href="index.html">首页</a> / 
                 <a href="news.html">补单资讯</a> /
-                <a href="/">百花谷平台审核标准及优化提升介绍</a>
+                <a href="javascript:;">百花谷平台审核标准及优化提升介绍</a>
             </p>
             <div class="desrc clearfix">
                 <div class="leftBar">
@@ -68,8 +67,8 @@
                         <p>百花谷平台审核标准及优化提升介绍，为了提升百花谷平台的效果，我们做了很多的提升改进。随着淘宝稽查维度和力度的升级，平台对买手账号IP、账号地址、以及账号安全等可能引起降权的种种因素进行了优化！</p>
                         <p>平台一直高标准筛选买号，对风险号零容忍，基于平台审核标准和部分商家审核标准不一，决定开放自主审核买号功能！</p>
                         <p>买手接单后，商家有一个小时审核时间，超时则系统自动审核通过；审核拒绝的买号，则永远不能再接商家任务，同时把任务分配给其他买手。请各位商家在审核时间内及时审核账号！</p>
-                        <img class="w100" src="./assets/images/bhg-img2.png" alt="">
-                        <img class="w100" src="./assets/images/bhg-img3.png" alt="">
+                        <img class="w100 lazy" data-original="./assets/images/bhg-img2.png" alt="">
+                        <img class="w100 lazy" data-original="./assets/images/bhg-img3.png" alt="">
                     </div>
                     <div class="b-nav tc">
                         <a class="prev" href="2.html"></a>
@@ -83,32 +82,32 @@
         <ul class="pic">
             <li>
                 <a class="clearfix" href="1.html">
-                    <img class="left" src="./assets/images/bhg-zixun-img1.jpg" alt=""><span class="right">百花谷平台靠谱吗_怎么样</span>
+                    <img class="left lazy" data-original="./assets/images/bhg-zixun-img1.jpg" alt=""><span class="right">百花谷平台靠谱吗_怎么样</span>
                 </a>
             </li>
             <li>
                 <a class="clearfix" href="2.html">
-                    <img class="left" src="./assets/images/bhg-zixun-img2.jpg" alt=""><span class="right">百花谷平台任务模板_快速发布任务_附教程</span>
+                    <img class="left lazy" data-original="./assets/images/bhg-zixun-img2.jpg" alt=""><span class="right">百花谷平台任务模板_快速发布任务_附教程</span>
                 </a>
             </li>
             <li>
                 <a class="clearfix" href="3.html">
-                    <img class="left" src="./assets/images/bhg-zixun-img3.jpg" alt=""><span class="right">百花谷平台审核标准及优化提升介绍</span>
+                    <img class="left lazy" data-original="./assets/images/bhg-zixun-img3.jpg" alt=""><span class="right">百花谷平台审核标准及优化提升介绍</span>
                 </a>
             </li>
             <li>
                 <a class="clearfix" href="4.html">
-                    <img class="left" src="./assets/images/bhg-zixun-img4.jpg" alt=""><span class="right">百花谷流量任务_人工干预链接注意事项</span>
+                    <img class="left lazy" data-original="./assets/images/bhg-zixun-img4.jpg" alt=""><span class="right">百花谷流量任务_人工干预链接注意事项</span>
                 </a>
             </li>
             <li>
                 <a class="clearfix" href="5.html">
-                    <img class="left" src="./assets/images/bhg-zixun-img6.jpg" alt=""><span class="right">百花谷买手任务流程展示_防秒拍_防拍立淘_防搜店铺名</span>
+                    <img class="left lazy" data-original="./assets/images/bhg-zixun-img6.jpg" alt=""><span class="right">百花谷买手任务流程展示_防秒拍_防拍立淘_防搜店铺名</span>
                 </a>
             </li>
             <li>
                 <a class="clearfix" href="6.html">
-                    <img class="left" src="./assets/images/bhg-zixun-img5.png" alt=""><span class="right">商家注意_补单必看_百花谷商家必看</span>
+                    <img class="left lazy" data-original="./assets/images/bhg-zixun-img5.png" alt=""><span class="right">商家注意_补单必看_百花谷商家必看</span>
                 </a>
             </li>
         </ul>
@@ -139,17 +138,17 @@
     </div>
     <ul class="cont">
         <li>
-            <img src="./assets/images/bhg-icon1.png" alt="">
+            <img class="lazy" data-original="./assets/images/bhg-icon1.png" alt="">
             <h2>入驻流程</h2>
             <p>点击网站右上方注册，绑定店铺信息，等待审核通过</p>
         </li>
         <li>
-            <img src="./assets/images/bhg-icon2.png" alt="">
+            <img class="lazy" data-original="./assets/images/bhg-icon2.png" alt="">
             <h2>疑问咨询</h2>
             <p>绑定店铺后，可查看任务流程，无需任何费用，如有疑问可在线咨询</p>
         </li>
         <li>
-            <img src="./assets/images/bhg-icon3.png" alt="">
+            <img class="lazy" data-original="./assets/images/bhg-icon3.png" alt="">
             <h2>售后保障</h2>
             <p>平台对于订单售后有专业团队，全程保障，资金方面跑单包赔，极速处理</p>
         </li>
@@ -167,7 +166,7 @@
                 <li><a href="news.html">平台公告</a></li>
             </ul>
             <ul class="right tc">
-                <img src="./assets/images/bhg-weChat-code.jpg" alt="">
+                <img class="lazy" data-original="./assets/images/bhg-weChat-code.jpg" alt="">
                 <p>微信二维码</p>
             </ul>
         </div>
@@ -201,9 +200,13 @@
 
 
     <script src="./assets/js/rem.js"></script>
+    <script src="./assets/js/jquery.lazyload.min.js"></script>
     <script src="./assets/swiper/swiper.js"></script>
     <script>
         $(function() {
+            /* 图片懒加载 */
+            $("img.lazy, .bg-lazy").lazyload({ effect: "fadeIn" });
+            
             // 右侧悬浮栏效果
             $('.J-right-fixed li').each(function(){
                 $(this).hover(function() {

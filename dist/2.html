@@ -10,16 +10,15 @@
     <link href="./assets/swiper/swiper.css" rel="stylesheet">
     <link href="./assets/fonts/font-awesome.css" rel="stylesheet">
     <link href="./assets/css/reset.css" rel="stylesheet">
+    <link rel='stylesheet' href='./assets/css/pc-layout.css' id="theLayout">
     <script src="./assets/js/jquery.js"></script>
     <!-- 判断移动端或者pc端导入相应的样式表 -->
     <script>
         (function() {
             if (navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)) {
-                $('head').append("<link rel='stylesheet' href='./assets/css/m-layout.css'>");
+                var _layout = document.getElementById('theLayout');
+                _layout.setAttribute('href','./assets/css/m-layout.css');
                 return true;
-            }else {
-                $('head').append("<link rel='stylesheet' href='./assets/css/pc-layout.css'>");
-                return false;
             }
         })();
     </script>
@@ -48,7 +47,7 @@
     
     <!-- banner图片 -->
     <div class="banner">
-        <img src="./assets/images/bhg-banner4.jpg" alt="">
+        <img class="lazy" data-original="./assets/images/bhg-banner4.jpg" alt="">
     </div>
 
     <div class="container public-part">
@@ -56,7 +55,7 @@
             <p class="nav">
                 <a href="index.html">首页</a> / 
                 <a href="news.html">补单资讯</a> /
-                <a href="/">百花谷平台任务模板_快速发布任务_附教程</a>
+                <a href="javascript:;">百花谷平台任务模板_快速发布任务_附教程</a>
             </p>
             <div class="desrc clearfix">
                 <div class="leftBar">
@@ -67,7 +66,7 @@
                     <div class="main">
                         <p>百花谷平台任务模板，快速发布任务介绍，为了便于理解与操作，我们特意附教程给各位商家，我们的任务模板功能，可以快速发布任务，一键发布，提高放单效率。流程：任务管理-任务标题栏-重新发布（进入发布任务记录）；如有不懂，可随时联系客服。</p>
                         <p class="mt">百花谷教程示例如下：</p>
-                        <img class="w100" src="./assets/images/bhg-img1.png" alt="">
+                        <img class="w100 lazy" data-original="./assets/images/bhg-img1.png" alt="">
                         <p>鉴于部分商家不熟悉我们百花谷的操作系统，发布任务过程中会出现一些不必要麻烦，请商家细阅！</p>
                         <p>1、任务模板：我们平台有任务模板，任务管理-任务栏-重新发布（进入发布记录），每次进去原有记录模板，进去修改发布关键词、单数、时间发布即可，1分钟搞定。</p>
                         <p>2、发布时间设置提醒（重要）：务必看好发布时间，发布的时候，一定要检查好发出时间，一定要晚于当前时间！特别是待支付状态的任务，如果是4月17号22:00设置好发布500单，此时处于待支付状态，到了4月18号9：00去支付发布，那么这500单，会立刻发出来，1秒中发出500单！建议大家检查好待支付任务，宁愿重新发布，也不要去立刻支付，避免时间出错！</p>
@@ -93,32 +92,32 @@
         <ul class="pic">
             <li>
                 <a class="clearfix" href="1.html">
-                    <img class="left" src="./assets/images/bhg-zixun-img1.jpg" alt=""><span class="right">百花谷平台靠谱吗_怎么样</span>
+                    <img class="left lazy" data-original="./assets/images/bhg-zixun-img1.jpg" alt=""><span class="right">百花谷平台靠谱吗_怎么样</span>
                 </a>
             </li>
             <li>
                 <a class="clearfix" href="2.html">
-                    <img class="left" src="./assets/images/bhg-zixun-img2.jpg" alt=""><span class="right">百花谷平台任务模板_快速发布任务_附教程</span>
+                    <img class="left lazy" data-original="./assets/images/bhg-zixun-img2.jpg" alt=""><span class="right">百花谷平台任务模板_快速发布任务_附教程</span>
                 </a>
             </li>
             <li>
                 <a class="clearfix" href="3.html">
-                    <img class="left" src="./assets/images/bhg-zixun-img3.jpg" alt=""><span class="right">百花谷平台审核标准及优化提升介绍</span>
+                    <img class="left lazy" data-original="./assets/images/bhg-zixun-img3.jpg" alt=""><span class="right">百花谷平台审核标准及优化提升介绍</span>
                 </a>
             </li>
             <li>
                 <a class="clearfix" href="4.html">
-                    <img class="left" src="./assets/images/bhg-zixun-img4.jpg" alt=""><span class="right">百花谷流量任务_人工干预链接注意事项</span>
+                    <img class="left lazy" data-original="./assets/images/bhg-zixun-img4.jpg" alt=""><span class="right">百花谷流量任务_人工干预链接注意事项</span>
                 </a>
             </li>
             <li>
                 <a class="clearfix" href="5.html">
-                    <img class="left" src="./assets/images/bhg-zixun-img6.jpg" alt=""><span class="right">百花谷买手任务流程展示_防秒拍_防拍立淘_防搜店铺名</span>
+                    <img class="left lazy" data-original="./assets/images/bhg-zixun-img6.jpg" alt=""><span class="right">百花谷买手任务流程展示_防秒拍_防拍立淘_防搜店铺名</span>
                 </a>
             </li>
             <li>
                 <a class="clearfix" href="6.html">
-                    <img class="left" src="./assets/images/bhg-zixun-img5.png" alt=""><span class="right">商家注意_补单必看_百花谷商家必看</span>
+                    <img class="left lazy" data-original="./assets/images/bhg-zixun-img5.png" alt=""><span class="right">商家注意_补单必看_百花谷商家必看</span>
                 </a>
             </li>
         </ul>
@@ -149,17 +148,17 @@
     </div>
     <ul class="cont">
         <li>
-            <img src="./assets/images/bhg-icon1.png" alt="">
+            <img class="lazy" data-original="./assets/images/bhg-icon1.png" alt="">
             <h2>入驻流程</h2>
             <p>点击网站右上方注册，绑定店铺信息，等待审核通过</p>
         </li>
         <li>
-            <img src="./assets/images/bhg-icon2.png" alt="">
+            <img class="lazy" data-original="./assets/images/bhg-icon2.png" alt="">
             <h2>疑问咨询</h2>
             <p>绑定店铺后，可查看任务流程，无需任何费用，如有疑问可在线咨询</p>
         </li>
         <li>
-            <img src="./assets/images/bhg-icon3.png" alt="">
+            <img class="lazy" data-original="./assets/images/bhg-icon3.png" alt="">
             <h2>售后保障</h2>
             <p>平台对于订单售后有专业团队，全程保障，资金方面跑单包赔，极速处理</p>
         </li>
@@ -177,7 +176,7 @@
                 <li><a href="news.html">平台公告</a></li>
             </ul>
             <ul class="right tc">
-                <img src="./assets/images/bhg-weChat-code.jpg" alt="">
+                <img class="lazy" data-original="./assets/images/bhg-weChat-code.jpg" alt="">
                 <p>微信二维码</p>
             </ul>
         </div>
@@ -211,9 +210,13 @@
 
 
     <script src="./assets/js/rem.js"></script>
+    <script src="./assets/js/jquery.lazyload.min.js"></script>
     <script src="./assets/swiper/swiper.js"></script>
     <script>
         $(function() {
+            /* 图片懒加载 */
+            $("img.lazy, .bg-lazy").lazyload({ effect: "fadeIn" });
+            
             // 右侧悬浮栏效果
             $('.J-right-fixed li').each(function(){
                 $(this).hover(function() {
